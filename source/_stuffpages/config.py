@@ -10,8 +10,8 @@ output_dir = "../../docs"
 defaults = {
     "title":        None,  # None will set title to file/directory name
     "description":  "",
-    "author":       "Florian Krause",
-    "authorlink":   "https://www.fladd.de",
+    "author":       "Zipped Album",
+    "authorlink":   "https://github.com/zipped-album",
     "date":         "",
     "style":        os.path.abspath("styles/style.css"),
     "settings":     "",
