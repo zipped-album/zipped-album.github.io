@@ -1,3 +1,3 @@
 # zipped-album.github.io
 
-Zipped Album website.
+Zipped Album website
