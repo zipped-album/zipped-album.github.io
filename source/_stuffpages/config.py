@@ -12,7 +12,7 @@ defaults = {
     "description":  "",
     "author":       "Zipped Album",
     "authorlink":   "https://github.com/zipped-album",
-    "date":         "",
+    "date":         "2021",
     "style":        os.path.abspath("styles/style.css"),
     "settings":     "",
     "favicon":     "favicon.ico"
@@ -47,9 +47,7 @@ html_header = [
 # Can make use of defaults/meta data (lowercase, prefixed with $) and listings
 html_footer = [
     '<p>',
-    '<strong>&copy; <a href="$authorlink">$author</a></strong>',
-    '<br>',
-    '<em>$date</em>',
+    '<strong>&copy; $date <a href="$authorlink">$author</a></strong>',
     '</p>',
     '<p>',
     'Created with <a href="https://fladd.github.io/StuffPages/">StuffPages</a>',
