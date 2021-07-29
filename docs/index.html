@@ -9,6 +9,29 @@
 <meta content="" name="description"/>
 <link href="_resources/_stuffpages/styles/style.css" media="screen" rel="stylesheet"/>
 <link href="_resources/favicon.ico" rel="icon" type="image/x-icon"/>
+<script>
+const getRandomNumber = (maxNum) => {
+  return Math.floor(Math.random() * maxNum);
+};
+const getRandomColour = () => {
+  const h = getRandomNumber(360);
+  const s = getRandomNumber(100);
+  const l = 88;
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+};
+const setBackgroundColour = () => {
+    const randomColour = getRandomColour();
+    let elems = document.querySelectorAll("*");
+    elems = Array.from( elems );
+    let arr = elems.filter( elem => String( document.defaultView.getComputedStyle( elem, null ).backgroundColor ) == "rgb(223, 224, 223)" );
+    arr.forEach( elem => {
+        elem.style.backgroundColor = randomColour;
+    });
+}
+window.onload = () => {
+  setBackgroundColour()
+};
+</script>
 </head>
 <body>
 <header>
