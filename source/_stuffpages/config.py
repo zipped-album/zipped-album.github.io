@@ -1,4 +1,5 @@
 import os
+import datetime
 
 import pymdownx.emoji
 
@@ -12,7 +13,7 @@ defaults = {
     "description":  "",
     "author":       "Zipped Album",
     "authorlink":   "https://github.com/zipped-album",
-    "date":         "2021",
+    "date":         f"2021-{datetime.datetime.now().year}",
     "style":        os.path.abspath("styles/style.css"),
     "settings":     "",
     "favicon":     "favicon.ico"
